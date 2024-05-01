@@ -9,6 +9,7 @@ import naver_navigation from '/assets/images/naver_navigation.webp'
 import SubLayout from '@shared/SubLayout'
 import { IoMdArrowRoundBack } from '@react-icons/all-files/io/IoMdArrowRoundBack'
 import { FaCar } from '@react-icons/all-files/fa/FaCar'
+import { FaBus } from '@react-icons/all-files/fa/FaBus'
 import { IoIosSubway } from '@react-icons/all-files/io/IoIosSubway'
 
 const cx = classNames.bind(styles)
@@ -17,10 +18,6 @@ declare global {
   interface Window {
     kakao: any
   }
-}
-
-function FaBusSimple() {
-  return null
 }
 
 const MapView = ({ location }: { location: Location }) => {
@@ -81,7 +78,7 @@ const MapView = ({ location }: { location: Location }) => {
             <WayToCome
               label="버스 이용시"
               list={location.waytocome.bus}
-              icon={<FaBusSimple />}
+              icon={<FaBus />}
             />
             <WayToCome
               label="자가용 이용시"
