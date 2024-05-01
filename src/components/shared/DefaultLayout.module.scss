@@ -13,17 +13,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 480px;
 
     .contents {
       position: relative;
       z-index: 9;
       width: 100%;
+      min-height: 50vh;
       box-shadow: #0000003d 0 3px 8px;
       border: 1px solid rgb(131, 94, 168);
       border-radius: 10px;
       background: var(--beige);
-
-
     }
   }
 }
