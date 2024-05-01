@@ -1,5 +1,4 @@
 
-
 $assets: (
   1: '01',
   2: '02',
@@ -11,9 +10,8 @@ $assets: (
 
 @function image($key, $format: 'jpg') {
   $id: map-get($assets, $key);
-  @return url('../../assets/images/gallery_' + $id + '.' + $format);
+  @return url("https://res.cloudinary.com/dioj2hqko/image/upload/c_fill,q_auto:best/v1714455428/webp/gallery_#{$id}.#{$format}");
 }
-
 .content {}
 
 .content_inner {

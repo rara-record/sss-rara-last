@@ -4,14 +4,13 @@ import FullScreenMessage from '@components/shared/FullScrrenMessage'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import Home from '@components/sections/Home'
-import MapView from '@components/sections/MapView'
-import Account from '@components/sections/Account'
+import ImageGallery from '@components/sections/ImageGallery'
+import LocationInfo from '@components/sections/LocationInfo'
+import Contact from '@components/sections/Contact'
 
-const ImageGallery = lazy(() => import('@components/sections/ImageGallery'))
-const LocationInfo = lazy(() => import('@components/sections/LocationInfo'))
-const Contact = lazy(() => import('@components/sections/Contact'))
 const ImageViewer = lazy(() => import('@components/sections/ImageViewer'))
-
+const MapView = lazy(() => import('@components/sections/MapView'))
+const Account = lazy(() => import('@components/sections/Account'))
 function App() {
   const [wedding, setWedding] = useState<Wedding | null>(null)
   const [loading, setLoading] = useState(false)

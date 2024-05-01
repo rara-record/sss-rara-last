@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   max-width: 26.6667rem; // 480px (18px 기준)
-  height: 100vh;
+  height: calc(100vh - 46px);
   margin: 0 auto;
   padding: 1.3333rem; // 24px (18px 기준)
 }
