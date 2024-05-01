@@ -1,0 +1,98 @@
+{
+  "wedding": {
+    "id": 0,
+    "date": "2024-06-16T13:40:00",
+    "location": {
+      "lat": 37.5672668,
+      "lng": 126.8269593,
+      "name": "보타닉파크웨딩 오키드홀",
+      "address": "서울시 강서구 마곡중앙5로 6 보타닉 푸르지오시티 로비층 보타닉파크 웨딩",
+      "kakao_link": "https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=%2C%2C461732%2C1129923&rt1=&rt2=%EB%B3%B4%ED%83%80%EB%8B%89%ED%8C%8C%ED%81%AC%EC%9B%A8%EB%94%A9&rtIds=%2C1089036510&rtTypes=%2CPLACE",
+      "naver_link": "https://map.naver.com/p/entry/place/94306527?c=15.00,0,0,0,dh",
+      "waytocome": {
+        "metro": [
+          "9호선/공항철도 - 마곡나루역 1, 2번 출구방면 진입통로 연결"
+        ],
+        "bus": [
+          "마곡나루역 정류장 하차"
+        ],
+        "car": [
+          "주차장 안내: 지하 3층~지하 8층 주차 가능"
+        ]
+      }
+    },
+    "groom": {
+      "name": "송승수",
+      "account": {
+        "bankName": "우리",
+        "accountNumber": "1002451599153",
+        "kakaopayLink": "https://qr.kakaopay.com/FMahgfQoV"
+      },
+      "phoneNumber": "01044484546",
+      "parents": [
+        {
+          "name": "송석곤",
+          "account": {
+            "bankName": "KB국민",
+            "accountNumber": "090240260316"
+          },
+          "phoneNumber": "01089679488"
+        },
+        {
+          "name": "김옥경",
+          "account": {
+            "bankName": "KB국민",
+            "accountNumber": "014211765737"
+          },
+          "phoneNumber": "01092619488"
+        }
+      ]
+    },
+    "bride": {
+      "name": "김보라",
+      "account": {
+        "bankName": "카카오뱅크",
+        "accountNumber": "3333169758253",
+        "kakaopayLink": "https://qr.kakaopay.com/FVJQ7SD3D"
+      },
+      "phoneNumber": "01022281784",
+      "parents": [
+        {
+          "name": "김동회",
+          "account": {
+            "bankName": "KB국민",
+            "accountNumber": "253210105287"
+          },
+          "phoneNumber": "01047219596"
+        },
+        {
+          "name": "김문정",
+          "account": {
+            "bankName": "우리",
+            "accountNumber": "31403847402002"
+          },
+          "phoneNumber": "01023731241"
+        }
+      ]
+    },
+    "message": {
+      "intro": "가장 진실된 것으로\n가장 당신을 위한 생각으로\n나의 마음을 가득 채워가고 싶다\n참 작은 마음이지만\n당신을 위한 것 중 가장 작은 것일지라도\n당신이 허락해준다면\n나 내 온 마음 그것이라 하겠다.\n\n이경선, <마음>",
+      "invitation": "소중한 분들을 초대합니다\n살랑이는 바람결에\n사랑이 묻어나는 계절입니다.\n여기 곱고 예쁜 두 사람이 사랑을 맺어\n인생의 반려자가 되려 합니다.\n새 인생을 시작하는 이 자리에 오셔서\n축복해 주시면 감사하겠습니다."
+    },
+    "galleryImages": [
+      "/assets/images/gallery_01.jpg",
+      "/assets/images/gallery_02.jpg",
+      "/assets/images/gallery_03.jpg",
+      "/assets/images/gallery_04.jpg",
+      "/assets/images/gallery_05.jpg",
+      "/assets/images/gallery_06.jpg"
+    ],
+    "hallImages": [
+      "hall_01",
+      "hall_02",
+      "hall_03",
+      "hall_04"
+    ],
+    "attendCount": 0
+  }
+}

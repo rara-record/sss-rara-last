@@ -1,0 +1,38 @@
+@import url("../../scss/keyframes.scss");
+
+:root {
+  --circle-size: 20vmin;
+
+  @media (max-width: 375px) {
+    --circle-size: 17vmin;
+  }
+}
+
+.trigger {
+  position: relative;
+  height: auto;
+  transform-origin: center;
+
+  .circle {
+    font-family: GreatVibes-Regular, cursive;
+    max-width: var(--circle-size); // 원 크기 변수 사용
+    fill: currentColor;
+    animation: spin 10s linear infinite;
+  }
+}
+
+.move {
+  color: inherit;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: flink 1s linear infinite;
+
+
+  > svg {
+    font-size: 1.5em;
+  }
+}
+

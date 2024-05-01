@@ -1,0 +1,147 @@
+@import url("../../scss/keyframes.scss");
+
+.map_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 26.6667rem; // 480px (18px 기준)
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1.3333rem; // 24px (18px 기준)
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.3333rem 0.7778rem; // 24px 14px (18px 기준)
+  border-radius: 1.7778rem; // 32px (18px 기준)
+  background: #fff;
+}
+
+.wrap-header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.1111rem; // 20px (18px 기준)
+
+  .location_back_button {
+    font-size: 1rem; // 18px (18px 기준)
+    color: var(--point_purple);
+    position: absolute;
+    left: 1.3333rem; // 24px (18px 기준)
+
+    svg {
+      font-size: 1.8em;
+    }
+  }
+
+  .txt-title {
+    @media only screen and (max-width: 27.7778rem) { // 500px (18px 기준)
+      margin: 2.2222rem 0 1.3333rem; // 40px 0 24px
+    }
+    color: var(--black);
+    margin: 0.8889rem 0; // 16px 0 (18px 기준)
+  }
+
+  .txt-subtitle {
+    font-size: 1.2222rem; // 22px (18px 기준)
+    font-weight: 400;
+    color: var(--point_purple);
+  }
+}
+
+.navigation {
+    @media only screen and (max-width: 360px) {
+      margin: 1.1111rem;
+      padding: 1rem 0;
+  }
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  margin: 1.8889rem 1.1111rem; // 34px 20px
+  padding: 30px 0;
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  gap: 1rem;
+
+  span {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  img {
+    vertical-align: middle;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+
+}
+
+.wrap-map {
+  position: relative;
+  width: 100%;
+  max-width: 26.6667rem; // 480px (18px 기준)
+  margin-bottom: 1.1111rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  .map {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+  }
+
+  .btn-find-way {
+    color: var(--white);
+    text-decoration: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 1.3333rem; // 24px (18px 기준)
+    left: 50%;
+    padding: 0.4444rem 1.3333rem; // 8px 24px (18px 기준)
+    transform: translateX(-50%);
+    border: 1px solid var(--point_purple);
+    border-radius: 1.7778rem; // 32px (18px 기준)
+    background-color: var(--point_purple);
+  }
+}
+
+.btn-find-way {
+  display: flex;
+  align-items: center;
+  gap: 0.2778rem; // 5px (18px 기준)
+
+  svg {
+    font-size: 1.4rem;
+  }
+}
+
+.come-wrapper {
+  padding: 0 1.1111rem;
+}
+
+.way-to-come {
+  color: var(--black);
+  padding-bottom: 0.5556rem; // 10px 0 (18px 기준)
+
+  .txt-label {
+    font-size: 1rem; // 18px (18px 기준)
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.2778rem; // 5px (18px 기준)
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  li {
+    font-size: 0.8889rem; // 16px (18px 기준)
+    padding: 0.1667rem 0; // 3px 0 (18px 기준)
+  }
+
+  svg {
+    font-size: 1.3rem;
+  }
+}

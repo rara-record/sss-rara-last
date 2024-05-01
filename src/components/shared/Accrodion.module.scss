@@ -1,0 +1,42 @@
+.wrap-accoridon {
+  color: #3e3a39;
+  margin-bottom: 6px;
+
+
+  .wrap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--purple);
+
+    .ico-arrow-down {
+      width: 20px;
+      height: 20px;
+      fill: var(--black);
+    }
+  }
+
+  .wrap-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+}
+
+.wrap-accoridon.open {
+  .wrap-header {
+    .ico-arrow-down {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .wrap-content {
+    box-sizing: border-box;
+    max-height: 500px;
+
+  }
+}

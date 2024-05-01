@@ -1,0 +1,102 @@
+
+
+.account {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 26.6667rem; // 480px (18px 기준)
+  min-height: calc(100vh - 2.5556rem); // calc(100vh - 46px) (18px 기준)
+  margin: 0 auto;
+  padding: 1.3333rem; // 24px (18px 기준)
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1.3333rem 0.7778rem; // 24px 14px (18px 기준)
+  border-radius: 1.7778rem; // 32px (18px 기준)
+  background: #fff;
+}
+
+.wrap-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .location_back_button {
+    font-size: 1rem; // 18px (18px 기준)
+    color: var(--point_purple);
+    position: absolute;
+    left: 1.3333rem; // 24px (18px 기준)
+
+    svg {
+      font-size: 1.8em;
+    }
+  }
+
+  .txt-title {
+    font-size: 1.2222rem; // 22px (18px 기준)
+    color: var(--point_purple);
+  }
+
+  .txt-subtitle {
+    font-size: 0.8333rem; // 15px (18px 기준)
+    font-weight: 400;
+    color: var(--point_purple);
+  }
+}
+
+.wrap-header-text {
+  font-size: 0.8888rem; // 16px (18px 기준)
+  line-height: 1.1111rem; // 20px (18px 기준)
+  color: var(--black);
+  padding: 2.2222rem 0; // 40px 0 (18px 기준)
+}
+
+.wrap-content {
+  padding: 0.5556rem 0; // 10px 0 (18px 기준)
+}
+
+.wrap_account {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.7778rem; // 14px (18px 기준)
+}
+
+.wrap_account_info {
+  font-size: 1rem; // 18px (18px 기준)
+
+  span {
+    font-size: 0.8888rem; // 16px (18px 기준)
+    display: block;
+    padding-top: 0.2222rem; // 4px (18px 기준)
+  }
+}
+
+.wrap_buttons {
+  display: flex;
+  gap: 0.3333rem; // 6px (18px 기준)
+  align-items: center;
+}
+
+.button {
+  font-size: 0.7778rem; // 14px (18px 기준)
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.6667rem; // 30px (18px 기준)
+  padding: 0 0.2222rem; // 0 4px (18px 기준)
+  border-radius: 0.1667rem; // 3px (18px 기준)
+  background: var(--point_purple);
+}
+
+.kakao {
+  color: #3A1D1D;
+  background: #F7E600;
+}

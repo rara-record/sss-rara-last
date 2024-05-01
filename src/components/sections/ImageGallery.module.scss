@@ -1,0 +1,30 @@
+:root {
+  --circle-size: 20vmin;
+
+  @media (max-width: 768px) {
+    --circle-size: 15vmin; // 768px 이하에서 원 크기 변경
+  }
+
+  @media (max-width: 480px) {
+    --circle-size: 10vmin; // 480px 이하에서 원 크기 변경
+  }
+}
+
+
+
+.image_gallery {
+}
+
+.image_viewer_trigger {
+  color: var(--black);
+  position: absolute;
+  bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+}
+
+

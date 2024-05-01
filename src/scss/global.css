@@ -1,0 +1,13 @@
+@import url("./font.scss");
+:root {
+  --red: #ea7664;
+  --black: #544f4f;
+  --purple: #89757a;
+  --beige: #f6f5f5;
+}
+
+body {
+  font-family: "NanumGeumEunBoHwa", sans-serif;
+}
+
+/*# sourceMappingURL=global.css.map */
