@@ -66,12 +66,10 @@ function Share({ groomName, brideName, date }: ShareProps) {
 
   return (
     <div className={cx('share')}>
-      <div className={cx('inner')} onClick={handleShareKakao}>
-        <button type="button" className={cx('button')}>
-          <RiKakaoTalkFill />
-        </button>
-        카카오톡 공유하기
-      </div>
+      <button type="button" className={cx('button')} onClick={handleShareKakao}>
+        <RiKakaoTalkFill />
+        <span>카카오톡 공유하기</span>
+      </button>
     </div>
   )
 }
