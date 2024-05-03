@@ -1,9 +1,8 @@
 import classNames from 'classnames/bind'
 import styles from './Account.module.scss'
-
 import Section from '@shared/Section'
 import { Link } from 'react-router-dom'
-import { Person, Wedding } from '@models/wedding'
+import { Person } from '@models/wedding'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Accordion from '@shared/Accordion'
 import SubLayout from '@shared/SubLayout'
@@ -11,15 +10,64 @@ import Share from '@components/sections/Share'
 import { IoMdArrowRoundBack } from '@react-icons/all-files/io/IoMdArrowRoundBack'
 
 const cx = classNames.bind(styles)
-const Account = ({
-  groom,
-  bride,
-  date,
-}: {
-  groom: Wedding['groom']
-  bride: Wedding['bride']
-  date: Wedding['date']
-}) => {
+
+const groom = {
+  name: '송승수',
+  account: {
+    bankName: '우리',
+    accountNumber: '1002451599153',
+    kakaopayLink: 'https://qr.kakaopay.com/FMahgfQoV',
+  },
+  phoneNumber: '01044484546',
+  parents: [
+    {
+      name: '송석곤',
+      account: {
+        bankName: 'KB국민',
+        accountNumber: '090240260316',
+      },
+      phoneNumber: '01089679488',
+    },
+    {
+      name: '김옥경',
+      account: {
+        bankName: 'KB국민',
+        accountNumber: '014211765737',
+      },
+      phoneNumber: '01092619488',
+    },
+  ],
+}
+const bride = {
+  name: '김보라',
+  account: {
+    bankName: '카카오뱅크',
+    accountNumber: '3333169758253',
+    kakaopayLink: 'https://qr.kakaopay.com/FVJQ7SD3D',
+  },
+  phoneNumber: '01022281784',
+  parents: [
+    {
+      name: '김동회',
+      account: {
+        bankName: 'KB국민',
+        accountNumber: '253210105287',
+      },
+      phoneNumber: '01047219596',
+    },
+    {
+      name: '김문정',
+      account: {
+        bankName: '우리',
+        accountNumber: '31403847402002',
+      },
+      phoneNumber: '01023731241',
+    },
+  ],
+}
+const date = '2024-06-16T13:40:00'
+
+const Account = () => {
   return (
     <SubLayout>
       <Section className={cx('account')}>
