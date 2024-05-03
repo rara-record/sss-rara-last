@@ -1,4 +1,3 @@
-// _address.scss
 
 @import "../../scss/keyframes";
 
@@ -17,44 +16,7 @@
 .address_container {
   text-align: center;
   position: absolute;
-  bottom: 16%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 73%;
-  height: 50%;
-  cursor: pointer;
-  gap: 0.6rem; // 14px
-
-  .header {
-    color: var(--black);
-
-    h1 {
-      font-size: calc(var(--font-size-base) * 1.125);
-      letter-spacing: 0.0625rem; // 1px
-    }
-
-    p {
-       font-size: calc(var(--font-size-base) * 0.8);
-    }
-  }
-}
-
-.address {
-  font-size: calc(var(--font-size-base) * 0.75);
-  color: var(--black);
-  display: flex;
-  gap: 0.6rem;
-  align-items: center;
-  padding: 0.4375rem 1.25rem; // 7px 20px
-  border-radius: 6.1875rem; // 99px
-  background: #FAF6F1;
-
-  svg {
-    font-size: 1rem;
-  }
+  bottom: 15%;
 }
 
 .map_trigger_button {
