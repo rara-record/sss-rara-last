@@ -7,8 +7,8 @@
     --font-size-base: 16px;
   }
 
-  @media (max-width: 375px) {
-    --font-size-base: 14px;
+  @media (max-width: 320px) {
+    --font-size-base: 15px;
   }
 }
 
@@ -24,7 +24,7 @@
 
 .wrap-contact {
   position: absolute;
-  top: 36%;
+  top: 26%;
   left: 0;
   display: flex;
   justify-content: center;
@@ -86,7 +86,11 @@
 .parents {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 
+  @media (max-width: 340px) {
+    gap: 0;
+  }
 }
 
 .tag {
