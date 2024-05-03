@@ -7,16 +7,21 @@ import { IoIosArrowBack } from '@react-icons/all-files/io/IoIosArrowBack'
 
 const cx = classNames.bind(styles)
 
-type ImageViewerProps = {
-  images: string[]
-}
+const galleryImages = [
+  '/assets/images/gallery_01.jpg',
+  '/assets/images/gallery_02.jpg',
+  '/assets/images/gallery_03.jpg',
+  '/assets/images/gallery_04.jpg',
+  '/assets/images/gallery_05.jpg',
+  '/assets/images/gallery_06.jpg',
+]
 
-function ImageViewer({ images }: ImageViewerProps) {
+function ImageViewer() {
   return (
     <SubLayout>
       <article className={cx('content')}>
         <div className={cx('content_inner')}>
-          {images.map((_, index) => (
+          {galleryImages.map((_, index) => (
             <motion.section
               className={cx('hero')}
               key={index}
