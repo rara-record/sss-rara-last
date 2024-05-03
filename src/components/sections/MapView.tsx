@@ -69,7 +69,7 @@ const MapView = () => {
         market.setMap(map)
       })
     }
-  }, [location])
+  }, [])
 
   return (
     <SubLayout>
